@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="tui-row">
+        <div class="tui-col_md-4">
+            <tui-island>
+                <form [formGroup]="authForm" (ngSubmit)="onSubmit()">
+                <h3 class="tui-island__title">Авторизация</h3>
+                <tui-input formControlName="username">
+                    Введите идентификатор пользователя
+                </tui-input>
+                <tui-input-password formControlName="password">
+                    Введите пароль
+                </tui-input-password>
+                <button                                                         
+                    appearance="accent"
+                    size="l"
+                    tuiButton
+                    type="submit"
+                    class="tui-island__footer-button"                                                   
+                >
+                    Войти
+                </button>
+                </form>
+            </tui-island>
+        </div>
+    </div>
+</div>  

@@ -1,0 +1,14 @@
+<div *ngIf="item">
+    <h2>Item Details</h2>
+    <p>ID: {{ item.id }}</p>
+    <p>Name: {{ item.name }}</p>
+    <p>Owner: {{ item.owner }}</p>
+    <p>URL: <a href="{{ item.url }}" target="_blank">{{ item.url }}</a></p>
+  </div>
+  <div *ngIf="!item">
+    <p>Item not found.</p>
+  </div>
+  
+  <div>
+    <button (click)="goBackToList()">Вернуться</button>
+  </div>

@@ -1,0 +1,12 @@
+<p>upload works!</p>
+
+<div>
+  <input type="file" #fileInput />
+  <input type="text" placeholder="File name" [(ngModel)]="filename" />
+  <button (click)="onUpload(fileInput)">Upload</button>
+</div>
+
+<div>
+  <button (click)="goBackToList()">Вернуться</button>
+</div>
+
