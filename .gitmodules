@@ -1,0 +1,3 @@
+[submodule "hosting-frontend"]
+	path = hosting-frontend
+	url = https://github.com/ElkovEM/hosting-frontend.git
